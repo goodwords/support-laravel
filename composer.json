@@ -1,0 +1,16 @@
+{
+    "name": "goodwords/support-laravel",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/view": "^5.1",
+        "illuminate/config": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Goodwords\\Support\\Laravel\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
