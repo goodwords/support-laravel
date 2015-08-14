@@ -10,7 +10,7 @@ Create `composer.json` inside your root project directory if you do not have one
 ```
 {
     "require": {
-        "goodwords/support-laravel": "~1.0"
+        "goodwords/support-laravel": "dev-master"
     },
     "repositories": [
         {
