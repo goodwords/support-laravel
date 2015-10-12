@@ -56,3 +56,8 @@ function route($routeName)
 {
     return 'index.php?view='.$routeName;
 }
+
+function public_path($path)
+{
+    return realpath(FCPATH.'.'.$path);
+}
