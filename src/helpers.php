@@ -61,3 +61,8 @@ function public_path($path)
 {
     return realpath(FCPATH.'.'.$path);
 }
+
+function asset($url)
+{
+    return base_url($url);
+}
