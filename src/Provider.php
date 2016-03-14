@@ -25,6 +25,5 @@ class Provider
         $viewServiceProvider = new ViewServiceProvider();
         $viewServiceProvider->app = $app;
         $viewServiceProvider->register();
-
     }
 }

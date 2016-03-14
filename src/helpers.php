@@ -21,7 +21,6 @@ function view($view = null, $data = [], $mergeData = [])
     return $factory->make($view, $data, $mergeData);
 }
 
-
 /**
  * Get the available container instance.
  *
@@ -29,7 +28,7 @@ function view($view = null, $data = [], $mergeData = [])
  * @param  array   $parameters
  * @return mixed|\Illuminate\Foundation\Application
  */
-function app($make=null,$parameters=[])
+function app($make = null, $parameters = [])
 {
     if (is_null($make)) {
         return Container::getInstance();
@@ -37,7 +36,6 @@ function app($make=null,$parameters=[])
 
     return Container::getInstance()->make($make, $parameters);
 }
-
 
 /**
  * Retrieve an old input item.
@@ -50,7 +48,6 @@ function old($key = null, $default = null)
 {
     return app('request')->old($key, $default);
 }
-
 
 function route($routeName)
 {
