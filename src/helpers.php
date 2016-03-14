@@ -29,7 +29,7 @@ function view($view = null, $data = [], $mergeData = [])
  * @param  array   $parameters
  * @return mixed|\Illuminate\Foundation\Application
  */
-function app($make = null, $parameters = [])
+function app($make=null,$parameters=[])
 {
     if (is_null($make)) {
         return Container::getInstance();
